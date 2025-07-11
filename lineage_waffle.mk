@@ -14,6 +14,12 @@ $(call inherit-product, device/oneplus/waffle/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := false
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_NAME := lineage_waffle
 PRODUCT_DEVICE := waffle
 PRODUCT_MANUFACTURER := OnePlus
