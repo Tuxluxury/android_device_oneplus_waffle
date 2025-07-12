@@ -36,6 +36,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.oplus
 
+# Properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prop/22825/product.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/22825/build.default.prop \
+    $(LOCAL_PATH)/prop/22877/EU.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/22877/build.EU.prop \
+    $(LOCAL_PATH)/prop/22877/IN.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/22877/build.IN.prop \
+    $(LOCAL_PATH)/prop/22877/NA.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/22877/build.NA.prop \
+    $(LOCAL_PATH)/prop/22877/product.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/22877/build.default.prop
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

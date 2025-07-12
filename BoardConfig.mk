@@ -19,6 +19,7 @@ TARGET_SCREEN_DENSITY := 640
 TARGET_KERNEL_CONFIG += vendor/oplus/waffle.config
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
